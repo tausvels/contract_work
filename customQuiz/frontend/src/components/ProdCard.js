@@ -2,8 +2,6 @@ import React from 'react';
 import { Card, Image } from 'semantic-ui-react';
 import RadioButton from './RadioButton';
 
-// ---- DATA ---- //
-
 
 const ProdCard = ({img, ind, desc, selected, setSelected}) => {
   return (

@@ -2,12 +2,10 @@ import React from 'react';
 import { Checkbox, Form } from 'semantic-ui-react';
 
 const RadioButton = ({desc, selected, setSelected}) => {
-  const handleChange = (e, {value, checked}) => {
-    
-    setSelected(value)
-    console.log('value of selected --> ', selected)
+  const handleChange = (e, {value}) => {
+    setSelected(prevState => ({...prevState, product: value}));
   };
-  console.log(selected)
+  
   return (
     <Form>
       <Form.Field>
@@ -19,7 +17,7 @@ const RadioButton = ({desc, selected, setSelected}) => {
           label='Select'
           name='checkboxRadioGroup'
           value={desc}
-          checked={selected === desc}
+          checked={selected.product === desc}
           onChange={handleChange}
         />
       </Form.Field>

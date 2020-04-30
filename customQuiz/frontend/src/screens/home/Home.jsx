@@ -18,7 +18,14 @@ const data = {
 
 // destructuing the props
 const Home = () => {
-  const [selected, setSelected] = useState('');
+  const [selected, setSelected] = useState({
+    product: '',
+  });
+  // ---- storing order detail ---------------- //
+  let orderDetail = {
+    product: selected.product,
+  }
+  console.log(orderDetail)
   const products = (
   <Card.Group itemsPerRow={2} stackable>
     {data.prod.map((obj, ind) => {
@@ -27,7 +34,6 @@ const Home = () => {
       )
     })}
   </Card.Group>);
-
   return (
     <div>
       {/* <h1>Welcome</h1> */}

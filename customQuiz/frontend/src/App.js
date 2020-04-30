@@ -2,6 +2,7 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
+import { ProductProvider } from './context/ProductContext';
 // ---- import components for ROUTING ----------------------------------------- //
 import Home from './screens/home/Home';
 import Products from './screens/products/Products';
@@ -14,8 +15,10 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path='/products' render={ (routeProps) => <Products {...routeProps} allStates = {stateObj} dispatch = {dispatch} /> } ></Route>
-        <Route path='/' render={ (routeProps) => <Home {...routeProps} allStates = {stateObj} dispatch = {dispatch} /> } ></Route>
+        <ProductProvider>
+          <Route path='/products' render={ (routeProps) => <Products {...routeProps} allStates = {stateObj} dispatch = {dispatch} /> } ></Route>
+          <Route path='/' render={ (routeProps) => <Home {...routeProps} allStates = {stateObj} dispatch = {dispatch} /> } ></Route>
+        </ProductProvider>
       </Switch>
     </Router>
   );
