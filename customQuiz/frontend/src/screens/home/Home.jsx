@@ -1,43 +1,40 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Card } from 'semantic-ui-react';
+// ---- import components ----------------------------------------------------- //
+import Header from '../../components/Header';
+import ProdCard from '../../components/ProdCard';
 import './home.css';
 
-// ---- IMPORT ACTIONS TO UPDATE STATE FROM THE ACTIONS FOLDER ----- //
-import { sampleAction, sampleAction2, reset } from '../../actions/sampleAction';
-import { signIn, signOut } from '../../actions/loggingAction';
+// ---- data ---- //
+const p1 = {img: `https://contents.mediadecathlon.com/p1484240/k$ab565f3675dbdd7e3c486175e2c16583/travel-100-men-s-trekking-shirt-maroon.jpg?&f=250x250`, desc:'Shirt 1'};
+const p2 = {img: `https://contents.mediadecathlon.com/p1484213/k$9c0a8190f8d63c2f59c85989338bbb50/.jpg?&f=250x250`, desc: 'Shirt 2'};
+const p3 = {img: `https://5.imimg.com/data5/UD/WQ/MY-31825245/mens-check-shirt-500x500-250x250.jpg`, desc: 'Shirt 3'};
+const p4 = {img: `https://5.imimg.com/data5/UY/QK/MY-37155066/check-men-shirt-250x250.jpg`, desc: 'Shirt 4'};
 
-
+const data = {
+  prod: [p1, p2, p3, p4],
+  selected: false
+}
 
 // destructuing the props
-const Home = ({allStates, dispatch}) => {
-  // props = {allStates: allStates, dispatch: dispatch} and hence the destructure.
+const Home = () => {
+  const [selected, setSelected] = useState('');
+  const products = (
+  <Card.Group itemsPerRow={2} stackable>
+    {data.prod.map((obj, ind) => {
+      return (
+          <ProdCard key={ind} img={obj.img} desc={obj.desc} selected={selected} setSelected={setSelected}/>
+      )
+    })}
+  </Card.Group>);
+
   return (
-    <div className = 'home_main'>
-
-      <h1> WELCOME TO TAUSIF'S REACT-REDUX TEMPLATE </h1>
-      <h2> This is the landing page OR HOME page</h2>
-      <h2> The states are stored in the REDUCERS folder and combined as 'allStates' in INDEX.js of that folder. State Update Actions are stored in Actions Folder.</h2>
-      <h1> SAMPLE STATE: {allStates.sample} </h1>
-      <p> All the state are passed from APP component which in tern gets from the src/index.js file.</p>
-      <p>The buttons given below updates the state of the SAMPLE STATE</p>
-      <button onClick = { () => dispatch(sampleAction()) }>Add 1</button> <br></br>
-      <button onClick = { () => dispatch(sampleAction2()) }>Add 10</button> <br></br>
-      <button onClick = { () => dispatch(reset()) }>RESET SAMPLE STATE</button>
-      <br></br>
-      <p>Another Sample State is isLOGGED STATE that conditionally renders the following line: </p>
-      {allStates.logged ? 
-        <>
-          <h1>YOU ARE <strong>LOGGED IN</strong></h1>
-          <Link to='about'>About Page</Link> <br></br>
-          <button onClick = { () => dispatch(signOut()) } >Click to SIGN OUT</button><br></br>
-        </> 
-        : 
-        <>
-          <h1>YOU ARE <strong>NOT</strong>LOGGED IN</h1>
-          <button onClick = { () => dispatch(signIn()) }>Click to SIGN IN</button><br></br>
-        </>
-      }
-
+    <div>
+      {/* <h1>Welcome</h1> */}
+      <Header name='home'/>
+      <div style={{width: '40%'}}>
+        {products}
+      </div>
     </div>
   );
 };
