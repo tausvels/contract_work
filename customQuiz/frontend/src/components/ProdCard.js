@@ -10,7 +10,7 @@ const ProdCard = ({img, ind, desc, selected, setSelected}) => {
       <Card.Content>
         <Card.Header>{desc}</Card.Header>
         <Card.Description>
-          <RadioButton desc={desc} selected={selected} setSelected={setSelected}/>
+          <RadioButton prodDesc={desc} selected={selected} setSelected={setSelected}/>
         </Card.Description>
       </Card.Content>
     </Card>
