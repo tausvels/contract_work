@@ -5,7 +5,7 @@ import RadioButton from './RadioButton';
 
 const ProdCard = ({img, ind, desc, selected, setSelected}) => {
   return (
-    <Card key={ind} >
+    <Card key={ind}>
       <Image src={img}/>
       <Card.Content>
         <Card.Header>{desc}</Card.Header>
