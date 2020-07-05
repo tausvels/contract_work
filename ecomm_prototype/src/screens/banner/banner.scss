@@ -23,3 +23,99 @@
   vertical-align: middle;
   width: 100%;
 }
+// --- BANNER HIGHLIGHT -------------- //
+.banner-highlight {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px auto;
+  width: 90%;
+  flex-grow: 1;
+}
+.banner-highlight-cards {
+  display: flex;
+  flex: 20%;
+  margin: 0 10px;
+  border: 1px solid #ebebeb;
+  padding: 40px 30px 0px 30px;
+}
+.banner-highlight-cards img {
+  align-self: center;
+  padding: 0 10px;
+}
+.banner-highlight__text {
+  padding-top: 2px;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+.banner-highlight__text p {
+  line-height: 30px;
+  color: #383838;
+  font-family: Quicksand,sans-serif!important;
+  font-size: 18px;
+}
+.banner-highlight__text mark {
+  background: none;
+  color: red;
+}
+.banner-highlight__text p:first-child {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #383838;
+
+}
+.mini-card__date {
+  flex: 60%;
+  height: 80px;
+  margin: 0 20px 0 0;
+  align-self: center;
+  border: 1px solid;
+  position: relative;
+  border-radius: 9px;
+}
+.mini-card__date-month {
+  margin: 0;
+  padding: 3px 0;
+  background: #00a3e0;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  border-radius: 9px 9px 0 0;
+}
+.mini-card__date-day {
+  margin: 0;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  color: #004281;
+  font-family: Nunito Sans,sans-serif;
+  top: 15px;
+}
+.highlight-card__link {
+  color: #0095e9;
+  font-family: Nunito Sans,sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 15px;
+}
+.highlight-card__link:hover {
+  color: #0095e9;
+  text-decoration: none;
+}
+.highlight-card__link:active {
+  color: #003c77;
+  text-decoration: none;
+}
+.highlight-card__link-special {
+  color: #0056ac;
+  text-decoration: none;
+  background-color: transparent;
+  font-Size: 18px;
+}
+.highlight-card__link-special:hover {
+  color: #007bff;
+}
