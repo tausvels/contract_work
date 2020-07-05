@@ -3,6 +3,7 @@ import {GeneralContext} from '../../contexts/GeneralContext';
 
 import NavBar from '../../components/Navbar/NavBar';
 import Banner from '../banner/Banner';
+import Trending from '../trendingProducts/Trending';
 
 export default function Home (props) {
 
@@ -10,6 +11,7 @@ export default function Home (props) {
     <div>
       <NavBar />
       <Banner />
+      <Trending />
     </div>
   )
 }

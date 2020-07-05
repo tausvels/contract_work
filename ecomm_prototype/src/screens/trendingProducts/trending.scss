@@ -1,0 +1,21 @@
+.header-text {
+  text-align: center;
+}
+.header-text h2 {
+  font-size: 36px;
+  line-height: 70px;
+  font-weight: 700;
+}
+.header-text p {
+  line-height: 30px;
+  margin-bottom: 1rem;
+  color: #707070;
+  font-size: 18px;
+  font-weight: 400;
+}
+.card-container {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  margin: 10px 0 20px 0;
+}
