@@ -5,7 +5,6 @@ import './App.css';
 import { GeneralProvider } from './contexts/GeneralContext';
 import { TestContextProvider } from './contexts/TestContext';
 // ---- import components for ROUTING ----------------------------------------- //
-import About from './screens/about/About';
 import Home from './screens/home/Home';
 import Test from './screens/Test/Test';
 
@@ -19,7 +18,6 @@ function App() {
       <Switch>
         <GeneralProvider>
           <TestContextProvider>
-            <Route path='/about' render={ (routeProps) => <About {...routeProps} allStates = {stateObj} dispatch = {dispatch} /> } ></Route>
             <Route path='/test' render={ (routeProps) => <Test {...routeProps} allStates = {stateObj} dispatch = {dispatch} /> } ></Route>
             <Route exact path='/' render={ (routeProps) => <Home {...routeProps} allStates = {stateObj} dispatch = {dispatch} /> } ></Route>
           </TestContextProvider>

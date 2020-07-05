@@ -1,0 +1,25 @@
+.banner-container {
+  margin-top: 110px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.banner-content {
+  position: relative;
+}
+.banner-content-text {
+  position: absolute;
+  top: 15px;
+}
+.banner-content-main__image a img {
+  width: 73%;
+}
+.banner-content-secondary__image {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+}
+.banner-content-secondary__image img {
+  vertical-align: middle;
+  width: 100%;
+}
