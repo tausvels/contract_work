@@ -1,0 +1,40 @@
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.btn {
+  cursor: pointer;
+  margin: 1vh 3vw;
+  border: none;
+  min-height: 5vh;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-family: 'Lato';
+  font-weight: 600;
+  box-shadow: 0 0 5px 3px #c2c1be;
+  overflow: hidden;
+  outline: none;
+}
+.btn:active {
+  transform: translateY(2px);
+}
+.btn-primary {
+  background-color: #006fbf;
+  color: white;
+  font-weight: 500;
+}
+.btn-action {
+  background-color: #046e1b;
+  color: white;
+  font-weight: 500;
+}
+.btn-danger {
+  background-color: #690208;
+  color: white;
+  font-weight: 500;
+}
