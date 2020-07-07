@@ -17,11 +17,54 @@ $backgroundColor: #f6f6f6;
   display: flex;
   flex-direction: column;
   flex: 0 0 25%;
-  margin: 2em 0;
+  margin: 2em 1em;
   align-items: center;
   cursor: pointer;
+  position: relative;
   border: 1px solid red;
+  height: 150px;
 }
 .contact-card img {
-  max-width: 100px;
+  position: absolute;
+  top: 15%;
+  max-width: 50px;
+}
+
+// ---- //
+.white-background {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background: white;
+  z-index: -5;
+  border: 1px solid $linkFontColorDeepBlue;
+  border-radius: 50%;
+}
+.blue-background {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  top: 10px;
+  border-radius: 50%;
+  background: $linkFontColorDeepBlue;
+  z-index: 2;
+}
+.contact-card-image {
+  position: absolute;
+  z-index: 3;
+}
+.contact-card p {
+  position: absolute;
+  bottom: 0;
+  font-family: Nunito Sans,sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: $linkFontColorDeepBlue;
+}
+.blue-background:hover {
+  background: $linkHoverColor;
+}
+.blue-background:hover,  .contact-card-image:hover{
+  background: $linkHoverColor;
 }
