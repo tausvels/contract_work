@@ -6,6 +6,7 @@ import Banner from '../banner/Banner';
 import Trending from '../trendingProducts/Trending';
 import Specials from '../specials/Specials';
 import Custom from '../Custom/Custom';
+import ShopByProduct from '../shopByProduct/ShopByProduct';
 
 export default function Home (props) {
 
@@ -16,6 +17,7 @@ export default function Home (props) {
       <Trending />
       <Specials />
       <Custom />
+      <ShopByProduct />
     </div>
   )
 }

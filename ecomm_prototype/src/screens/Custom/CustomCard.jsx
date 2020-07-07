@@ -6,7 +6,6 @@ function CustomCard(props) {
 
 
   return (
-    // <div className="mini-card-container">
     <div style={{display:'flex', flex: '1 1 25%',position: 'relative'}}>
       <div className="mini-card__round-background-color" 
         style={{ 
@@ -33,7 +32,6 @@ function CustomCard(props) {
         </div>
       </div>
     </div>
-  // </div>
   );
 }
 

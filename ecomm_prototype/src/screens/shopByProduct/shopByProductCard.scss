@@ -1,0 +1,37 @@
+$fontColor: #383838;
+$cardFontColor: #707070;
+$fadeColor: #909090;
+$borderColor: #ebebeb;
+$linkHoverColor: #007bff;
+$linkFontColorDeepBlue: #0056ac;
+
+.shop-by-product__card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+  margin: 2em;
+  border: 1px solid $borderColor;
+  cursor: pointer;
+}
+
+.shop-by-product__card img {
+  width: 100%;
+  height: auto;
+}
+.shop-by-product__card p {
+  text-align: center;
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 600;
+  background-color: #F8F8F8;
+  color: $linkFontColorDeepBlue;
+  margin: 0; 
+  padding: 15px;
+}
+.shop-by-product__card:hover {
+  border: 1px solid $linkHoverColor;
+}
+.shop-by-product__card:hover p {
+  color: $linkHoverColor;
+}

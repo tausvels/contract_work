@@ -1,0 +1,27 @@
+$fontColor: #383838;
+$cardFontColor: #707070;
+$fadeColor: #909090;
+$borderColor: #ebebeb;
+$linkHoverColor: #007bff;
+$linkFontColorDeepBlue: #0056ac;
+
+.shop-by-product-container {
+  display: flex;
+  flex-direction: column;
+}
+.shop-by-product-container-heading {
+  text-align: center;
+  font-size: 36px;
+  line-height: 70px;
+  color: $fontColor;
+}
+.shop-by-product__main-card-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+// --- SECOND CONTAINER //
+.shop-by-product__second-card-container {
+  display: flex;
+}
