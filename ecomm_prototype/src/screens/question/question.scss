@@ -1,0 +1,28 @@
+$fontColor: #383838;
+$cardFontColor: #707070;
+$fadeColor: #909090;
+$borderColor: #ebebeb;
+$linkHoverColor: #007bff;
+$linkFontColorDeepBlue: #0056ac;
+$backgroundColor: #f6f6f6;
+
+.question-container {
+  padding: 2em;
+  background: $backgroundColor;
+  margin: 2em 0;
+}
+.question-heading {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 50px;
+  margin: 10px auto;
+  color: $fontColor;
+  font-family: Nunito Sans,sans-serif;
+}
+.question-subheading p{
+  margin: 0;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 25px;
+  color: $fontColor;
+}

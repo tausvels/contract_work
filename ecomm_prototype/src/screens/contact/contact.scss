@@ -1,0 +1,27 @@
+$fontColor: #383838;
+$cardFontColor: #707070;
+$fadeColor: #909090;
+$borderColor: #ebebeb;
+$linkHoverColor: #007bff;
+$linkFontColorDeepBlue: #0056ac;
+$backgroundColor: #f6f6f6;
+
+.contact-container {
+  display: flex;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 25%;
+  margin: 2em 0;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid red;
+}
+.contact-card img {
+  max-width: 100px;
+}
