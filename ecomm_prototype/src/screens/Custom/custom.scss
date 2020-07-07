@@ -3,6 +3,7 @@ $cardFontColor: #707070;
 $fadeColor: #909090;
 $borderColor: #ebebeb;
 $linkHoverColor: #007bff;
+$linkFontColorDeepBlue: #0056ac;
 
 .custom-container {
   display: flex;
@@ -14,7 +15,7 @@ $linkHoverColor: #007bff;
   line-height: 70px;
   color: $fontColor;
 }
-.custom-container p {
+.custom-container-subheading {
   width: 56%;
   margin: auto;
   text-align: center;
@@ -31,37 +32,37 @@ $linkHoverColor: #007bff;
   text-decoration: none;
 }
 // ---- MINI-CARD-CONTAINER ---------------- //
-.mini-card-container {border: 1px solid;
-  margin: 2em 0;
+.mini-card-container {
+  margin: 2em;
   display: flex;
   overflow: hidden;
+  // width: 100%;
 }
-.mini-card {border: 1px solid red;
-  margin-top: 3em;
+.mini-card {
+  margin: 3em 3px 3em 3px;
   position: relative;
   height: 380px;
-  flex: 0 0 100%;
-
+  flex: 1 1 100%;
+  border: 1px solid $borderColor;
 }
-.mini-card__round-background-white {
+.mini-card__round-background-color {
   position: absolute;
   min-height: 110px;
   min-width: 110px;
-  background: beige;
   left: 34%;
   top: 0;
   border-radius: 50%;
-  border: 1px solid;
+  border: 1px solid $linkFontColorDeepBlue;
 }
 .mini-card__round-background {
   position: absolute;
   min-height: 100px;
   min-width: 100px;
-  background: blueviolet;
   left: 35.5%;
   top: 5px;
   border-radius: 50%;
   z-index: 5;
+  // background: $linkFontColorDeepBlue;
 }
 
 .mini-card__round-image img {
@@ -70,4 +71,25 @@ $linkHoverColor: #007bff;
   top: 30px;
   left: -8px;
   z-index: 6;
+}
+.mini-card-content {
+  position: absolute;
+  top: 20%;
+}
+.mini-card-content p {
+  text-align: center;
+  font-family: Nunito Sans,sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: $fontColor;
+  padding: 0 20px;
+}
+.mini-card-content p:nth-child(1) {
+  margin-bottom: 10px;
+  font-family: Nunito Sans,sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: $fontColor
 }
