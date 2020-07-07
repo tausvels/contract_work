@@ -5,6 +5,7 @@ import NavBar from '../../components/Navbar/NavBar';
 import Banner from '../banner/Banner';
 import Trending from '../trendingProducts/Trending';
 import Specials from '../specials/Specials';
+import Custom from '../Custom/Custom';
 
 export default function Home (props) {
 
@@ -14,6 +15,7 @@ export default function Home (props) {
       <Banner />
       <Trending />
       <Specials />
+      <Custom />
     </div>
   )
 }

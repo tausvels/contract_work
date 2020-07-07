@@ -1,0 +1,73 @@
+$fontColor: #383838;
+$cardFontColor: #707070;
+$fadeColor: #909090;
+$borderColor: #ebebeb;
+$linkHoverColor: #007bff;
+
+.custom-container {
+  display: flex;
+  flex-direction: column;
+}
+.custom-container h2{
+  text-align: center;
+  font-size: 36px;
+  line-height: 70px;
+  color: $fontColor;
+}
+.custom-container p {
+  width: 56%;
+  margin: auto;
+  text-align: center;
+  color: $cardFontColor;
+  font-family: Quicksand,sans-serif!important;
+  font-size: 18px;
+  line-height: 30px;
+}
+.custom-container p a {
+  color: $linkHoverColor;
+  opacity: 0.8;
+}
+.custom-container p a:hover {
+  text-decoration: none;
+}
+// ---- MINI-CARD-CONTAINER ---------------- //
+.mini-card-container {border: 1px solid;
+  margin: 2em 0;
+  display: flex;
+  overflow: hidden;
+}
+.mini-card {border: 1px solid red;
+  margin-top: 3em;
+  position: relative;
+  height: 380px;
+  flex: 0 0 100%;
+
+}
+.mini-card__round-background-white {
+  position: absolute;
+  min-height: 110px;
+  min-width: 110px;
+  background: beige;
+  left: 34%;
+  top: 0;
+  border-radius: 50%;
+  border: 1px solid;
+}
+.mini-card__round-background {
+  position: absolute;
+  min-height: 100px;
+  min-width: 100px;
+  background: blueviolet;
+  left: 35.5%;
+  top: 5px;
+  border-radius: 50%;
+  z-index: 5;
+}
+
+.mini-card__round-image img {
+  position: absolute;
+  max-height: 50px;
+  top: 30px;
+  left: -8px;
+  z-index: 6;
+}
