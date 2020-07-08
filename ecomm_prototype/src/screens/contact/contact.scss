@@ -5,6 +5,7 @@ $borderColor: #ebebeb;
 $linkHoverColor: #007bff;
 $linkFontColorDeepBlue: #0056ac;
 $backgroundColor: #f6f6f6;
+$mobileView: 700px;
 
 .contact-container {
   display: flex;
@@ -21,7 +22,7 @@ $backgroundColor: #f6f6f6;
   align-items: center;
   cursor: pointer;
   position: relative;
-  border: 1px solid red;
+  // border: 1px solid red;
   height: 150px;
 }
 .contact-card img {
@@ -42,9 +43,9 @@ $backgroundColor: #f6f6f6;
 }
 .blue-background {
   position: absolute;
-  height: 80px;
-  width: 80px;
-  top: 10px;
+  height: 90px;
+  width: 90px;
+  top: 6px;
   border-radius: 50%;
   background: $linkFontColorDeepBlue;
   z-index: 2;
@@ -65,6 +66,23 @@ $backgroundColor: #f6f6f6;
 .blue-background:hover {
   background: $linkHoverColor;
 }
-.blue-background:hover,  .contact-card-image:hover{
-  background: $linkHoverColor;
+
+@media screen and (max-width: $mobileView) {
+  .contact-container {
+    flex-direction: column;
+    display: block;
+  };
+  .contact-card {
+    justify-content: center;
+  };
+  .white-background {
+    top: 0;
+    left: 35%;
+  };
+  .blue-background {
+    left: 37%;
+  };
+  .contact-card img {
+    left: 44%;
+  };
 }

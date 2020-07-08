@@ -1,0 +1,54 @@
+$fontColor: #383838;
+$cardFontColor: #707070;
+$fadeColor: #909090;
+$borderColor: #ebebeb;
+$linkHoverColor: #007bff;
+$linkFontColorDeepBlue: #0056ac;
+$backgroundColor: #f6f6f6;
+
+.info-container {border: 1px solid red;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 30px;
+  background: #094b85;
+}
+.info-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0
+}
+.info-card-heading {
+  text-transform: uppercase;
+  color: white;
+}
+.info-card-container ul {
+  border: 1px solid;
+  list-style-type: none;
+  padding: 0 2px;
+}
+.info-card-container ul li {
+  margin: 1em 2px;
+}
+.info-card-container ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 16px;
+  color: hsla(0,0%,100%,.75);
+}
+.info-card-container ul li a:hover {
+  color: $linkHoverColor;
+}
+.special-contact {
+  flex: 0 0 15%;
+}
+.no-cursor ul li a:hover {
+  color: hsla(0,0%,100%,.75);
+}
+.special-contact table tr td {
+  color: hsla(0,0%,100%,.75);
+}
+.contact-table-row td:nth-child(1){
+  font-weight: 600;
+  padding: 0 5px 0 0;
+}

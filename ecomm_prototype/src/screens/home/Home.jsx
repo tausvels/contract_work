@@ -9,6 +9,7 @@ import Custom from '../Custom/Custom';
 import ShopByProduct from '../shopByProduct/ShopByProduct';
 import Question from '../question/Question';
 import Contact from '../contact/Contact';
+import CompanyInfo from '../CompanyInfo/CompanyInfo';
 
 export default function Home (props) {
 
@@ -22,6 +23,7 @@ export default function Home (props) {
       <ShopByProduct />
       <Question />
       <Contact />
+      <CompanyInfo />
     </div>
   )
 }
