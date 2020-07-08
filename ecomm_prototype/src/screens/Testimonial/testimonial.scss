@@ -1,0 +1,57 @@
+$fontColor: #383838;
+$cardFontColor: #707070;
+$fadeColor: #909090;
+$borderColor: #ebebeb;
+$linkHoverColor: #007bff;
+$linkFontColorDeepBlue: #0056ac;
+$backgroundColor: #f6f6f6;
+
+.testimonial-container {border: 1px solid;
+  margin: 3em auto;
+  padding: 30px 0;
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+};
+.average-testimonial-container {border: 1px solid red;
+  text-align: center;
+  flex: 10%;
+};
+.average-testimonial-container p, a {
+  font-size: 13px;
+  line-height: 16px;
+  color: $fontColor;
+  text-decoration: none;
+  
+}
+.average-testimonial-container p a {
+  padding-bottom: 1px;
+  border-bottom: 1px solid $fadeColor;
+}
+.average-testimonial-container p a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 20px;;
+}
+.tooltip .tooltip-text {
+  position: absolute;
+  z-index: 2;
+  // left: 20px;
+  visibility: hidden;
+  font-size: 12px;
+  width: 65px;
+  background: $borderColor;
+  color: $fontColor;
+  text-align: center;
+  padding: 5px 0;
+}
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+.carousel-container {border: 1px solid blue;
+  flex: 80%;
+};

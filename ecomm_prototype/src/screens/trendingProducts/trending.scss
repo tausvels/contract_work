@@ -5,13 +5,15 @@
   font-size: 36px;
   line-height: 70px;
   font-weight: 700;
+  margin-bottom: 0;
 }
 .header-text p {
   line-height: 30px;
-  margin-bottom: 1rem;
+  margin: 1em auto 3rem auto;
   color: #707070;
   font-size: 18px;
   font-weight: 400;
+  width: 50%;
 }
 .card-container {
   display: flex;

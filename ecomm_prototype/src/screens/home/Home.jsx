@@ -10,6 +10,7 @@ import ShopByProduct from '../shopByProduct/ShopByProduct';
 import Question from '../question/Question';
 import Contact from '../contact/Contact';
 import CompanyInfo from '../CompanyInfo/CompanyInfo';
+import Testimonial from '../Testimonial/Testimonial';
 
 export default function Home (props) {
 
@@ -21,6 +22,7 @@ export default function Home (props) {
       <Specials />
       <Custom />
       <ShopByProduct />
+      <Testimonial />
       <Question />
       <Contact />
       <CompanyInfo />
