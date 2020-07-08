@@ -6,7 +6,7 @@ $linkHoverColor: #007bff;
 $linkFontColorDeepBlue: #0056ac;
 $backgroundColor: #f6f6f6;
 
-.info-container {border: 1px solid red;
+.info-container, .info-container-footer {
   display: flex;
   justify-content: space-evenly;
   padding: 0 30px;
@@ -23,7 +23,6 @@ $backgroundColor: #f6f6f6;
   color: white;
 }
 .info-card-container ul {
-  border: 1px solid;
   list-style-type: none;
   padding: 0 2px;
 }
@@ -50,5 +49,82 @@ $backgroundColor: #f6f6f6;
 }
 .contact-table-row td:nth-child(1){
   font-weight: 600;
+  padding: 0 10px 0 0;
+}
+// ---- FOOTER SECTION -----------------------------//
+
+.info-container-footer {
+  justify-content: center;
+  padding: 3em 30px;
+}
+.info-container-footer h3 {
+  color: hsla(0,0%,100%, 1);
+}
+.info-container-footer ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+.info-container-footer ul li:nth-child(1) {
   padding: 0 5px 0 0;
+}
+.info-container-footer ul li {
+  padding: 0 5px;
+}
+.official-partners, .payment-methods {
+  margin: 0 30px;
+  padding: 0 10px 0 30px;
+}
+.payment-methods {
+  margin: 0 10px 0 0;
+  padding: 0;
+}
+.subscribe  {
+  flex: 30%;
+  padding-left: 10%;
+}
+.subscribe input, button {
+  padding: 16px;
+  outline: none;
+}
+.subscribe input {
+  font-size: 20px;
+}
+.subscribe button {
+  padding: 20px;
+  border-radius: 20px;
+  background: $linkFontColorDeepBlue;
+  border: transparent;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+.social-media {
+  padding-left: 35px;
+  padding-right: 40px;
+}
+.social-media ul li {
+  padding: 0 10px;
+}
+.social-media ul li:nth-child(1) {
+  padding: 0 10px 0 0
+}
+.fa {
+  color: white;
+}
+//---- FOOTER COPYRIGHT --------------//
+.footer-copyright {
+  display: flex;
+  // justify-content: space-evenly;
+  background: #0b4272;
+  padding-left: 30px;
+}
+.footer-copyright p, .footer-copyright a{
+  margin: 0;
+  padding: 20px 60px;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  color: hsla(0,0%,100%,.5);
 }
