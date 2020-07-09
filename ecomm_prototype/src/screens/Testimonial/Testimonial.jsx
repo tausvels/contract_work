@@ -1,6 +1,7 @@
 import React from 'react';
 import './testimonial.scss';
 import CarouselComponent from './CarouselComponent';
+import TestimonialCard from './TestimonialCard';
 
 
 
@@ -19,6 +20,7 @@ function Testimonial(props) {
       </div>
       <div className="carousel-container">
         <CarouselComponent />
+        <TestimonialCard />
       </div>
     </div>
   );

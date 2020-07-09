@@ -1,0 +1,30 @@
+.testimonial-card-container {border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  margin: 0 10px;
+};
+.testimonial-card-top {
+  display: flex;
+  justify-content: space-between;
+}
+.testimonial-card-container span:nth-child(2), .testimonial-client-name {
+  font-size: 11px;
+  margin-top: 4px;
+  opacity: 0.8;
+}
+.testimonial-card-heading {
+  padding-right: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  height: 16px;
+  margin: 0 0 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+.testimonial-card-subtext {
+  font-size: 13px;
+  line-height: 16px;
+}
